@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&lowbar;&lowbar;SOPORTE SIGDP&colon; Problemas t&iacute;picos y como resolverlos&lowbar;&lowbar;</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension ms-toolsai.jupyter */
+/* These classnames are inherited from bootstrap, but are present in most notebook renderers */
+
+.alert {
+    width: auto;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.alert > *:last-child {
+    margin-bottom: 0;
+}
+#preview > .alert:last-child {
+    /* Prevent this being set to zero by the default notebook stylesheet */
+    padding-bottom: 1em;
+}
+
+.alert-success {
+    /* Note there is no suitable color available, so we just copy "info" */
+    background-color: var(--theme-info-background);
+    color: var(--theme-info-foreground);
+}
+.alert-info {
+    background-color: var(--theme-info-background);
+    color: var(--theme-info-foreground);
+}
+.alert-warning {
+    background-color: var(--theme-warning-background);
+    color: var(--theme-warning-foreground);
+}
+.alert-danger {
+    background-color: var(--theme-error-background);
+    color: var(--theme-error-foreground);
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="soporte-sigdp-problemas-típicos-y-como-resolverlos"><strong>SOPORTE SIGDP: Problemas típicos y como resolverlos</strong></h1>
+<br />
+<h1 id="tabla-de-contenidos">Tabla de Contenidos</h1>
+<ul>
+<li><a href="#soporte-sigdp-problemas-t%C3%ADpicos-y-como-resolverlos"><strong>SOPORTE SIGDP: Problemas típicos y como resolverlos</strong></a></li>
+<li><a href="#tabla-de-contenidos">Tabla de Contenidos</a>
+<ul>
+<li><a href="#peritaje"><strong>PERITAJE</strong></a>
+<ul>
+<li><a href="#cambio-de-estado-a-peritajes"><strong>Cambio de Estado a Peritajes</strong></a></li>
+<li><a href="#no-descarga-peritaje"><strong>No Descarga Peritaje</strong></a></li>
+</ul>
+</li>
+<li><a href="#causas"><strong>CAUSAS</strong></a>
+<ul>
+<li><a href="#no-es-posible-crear-causa"><strong>No es posible crear causa</strong></a></li>
+<li><a href="#cambiar-procedimiento-a-una-causa"><strong>Cambiar Procedimiento a una Causa</strong></a></li>
+</ul>
+</li>
+<li><a href="#eliminar-atenci%C3%B3n-yo-gesti%C3%B3n"><strong>Eliminar Atención y/o Gestión</strong></a>
+<ul>
+<li><a href="#solicita-nuevo-rud-o-rud-repetidos"><strong>Solicita Nuevo RUD o RUD repetidos</strong></a></li>
+<li><a href="#tramitaci%C3%B3n-electr%C3%B3nica"><strong>Tramitación Electrónica</strong></a></li>
+</ul>
+</li>
+<li><a href="#pagos"><strong>PAGOS</strong></a></li>
+<li><a href="#-informe-reporte-cierre-"> Informe reporte cierre </a></li>
+<li><a href="#ingreso-err%C3%B3neo-del-ruc"><strong>Ingreso erróneo del RUC</strong></a></li>
+<li><a href="#editar-sistema-penitenciario"><strong>Editar Sistema Penitenciario</strong></a></li>
+<li><a href="#crear-o-eliminar-un-nuevo-encargado-de-centro-de-proceso"><strong>Crear o eliminar un nuevo encargado de Centro de Proceso</strong></a></li>
+<li><a href="#habilitar-m%C3%B3dulos-a-usuarios"><strong>Habilitar Módulos a usuarios</strong></a></li>
+<li><a href="#modificaci%C3%B3n-de-cuentas-de-sustituci%C3%B3n-creadas-err%C3%B3neamente"><strong>Modificación de cuentas de sustitución creadas erróneamente</strong></a>
+<ul>
+<li><a href="#para-abogados-licitados">Para Abogados Licitados:</a></li>
+<li><a href="#para-asistente-abogado-licitado">Para Asistente Abogado Licitado:</a></li>
+<li><a href="#actualizar-cuentas-del-sustituto">ACTUALIZAR CUENTAS DEL SUSTITUTO</a></li>
+</ul>
+</li>
+<li><a href="#actualizar-informaci%C3%B3n-del-historial">Actualizar Información Del Historial</a></li>
+<li><a href="#eliminar-registros"><strong>Eliminar registros</strong></a></li>
+<li><a href="#error-al-ingresar-notificaci%C3%B3n"><strong>Error al ingresar notificación</strong></a></li>
+<li><a href="#volver-a-un-timestamp-anterior-en-la-base-de-datos"><strong>Volver a un Timestamp anterior en la base de datos</strong></a></li>
+<li><a href="#problemas-con-documentos-en-gestor-documental"><strong>Problemas con documentos en Gestor Documental</strong></a></li>
+<li><a href="#error-creaci%C3%B3n-causas-autom%C3%A1ticas-se-asigna-a-un-dlj-no-vigente"><strong>Error creación causas automáticas (Se asigna a un DLJ no vigente)</strong></a></li>
+<li><a href="#el-rut-seleccionado-se-encuentra-en-el-listado-de-equipo-de-defensa"><strong>El RUT seleccionado se encuentra en el listado de equipo de defensa</strong></a></li>
+<li><a href="#solicitud-de-incorporaci%C3%B3n-segunda-sub-rogante-regional-o-agregar-centro-a-usuario"><strong>Solicitud de incorporación segunda sub rogante regional o agregar centro a usuario</strong></a></li>
+</ul>
+</li>
+</ul>
+<br />
+<h2 id="peritaje"><strong>PERITAJE</strong></h2>
+<br />
+<h3 id="cambio-de-estado-a-peritajes"><strong>Cambio de Estado a Peritajes</strong></h3>
+<br />
+<p>La mayoría de los problemas en relación al módulo de Peritaje tiene que ver con peritajes mal anulados. De allí que la solicitud por parte del usuario es <strong>Cambio de Estado del Peritaje</strong>. Lo que podemos hacer es deshacer la anulación para que retomen el flujo del Peritaje justo en el estado anterior a la anulación.</p>
+<p>Actividad: Modificar el campo <code>ESTADO</code> de la tabla <code>TBL_PTJ_ETAPA_PERITAJE</code> para el registro correspondiente. Valor <em>0</em> se cambia por <em>1</em>.</p>
+<p>QUERY:</p>
+<pre><code>BEGIN
+      Update TBL_PTJ_ETAPA_PERITAJE pp
+        set PP.ESTADO = '1'   --‘0’
+      Where PP.ETAPAPERITAJEID = V_ID;
+  
+    COMMIT;
+END;
+
+</code></pre>
+<p>Casos de Ejemplo: <br />
+<a href="https://redmine.dpp.cl/issues/11099">Ticket 1</a> <br />
+<a href="https://redmine.dpp.cl/issues/10955">Ticket 2</a> <br />
+<a href="https://redmine.dpp.cl/issues/10841">Ticket 3</a> <br /></p>
+<br />
+<h3 id="no-descarga-peritaje"><strong>No Descarga Peritaje</strong></h3>
+<br />
+<p>En general, cuando se presenta este inconveniente, se trata de peritajes antiguos y por lo general, son documentos que ya no están en el filesystem.</p>
+<p>Estas son las rutas conocidas:</p>
+<pre><code>/u01/oracle/app/admin/dominios/wlssigdp/archivos
+/u01/oracle/app/admin/dominios/wlssigdp/nfsfile02/peritaje
+</code></pre>
+<p>Casos de Ejemplo: <br />
+<a href="https://redmine.dpp.cl/issues/10966">Ticket 1</a> <br />
+<a href="https://redmine.dpp.cl/issues/10833">Ticket 2</a> <br />
+<a href="https://redmine.dpp.cl/issues/10753">Ticket 3</a> <br /></p>
+<br />
+<h2 id="causas"><strong>CAUSAS</strong></h2>
+<br />
+<h3 id="no-es-posible-crear-causa"><strong>No es posible crear causa</strong></h3>
+<br />
+<p>Por lo general, se trata de un error en el <code>PKG_TBL_TMP_CREACION_IMPUTADO.adm_xml_carga</code> (línea 227). Existe más de un registro para la misma causa. Esto provoca un error en dicha línea de código. Se recomienda eliminar el registro temporal de la causa y solicitar al usuario volver a intentar crear la causa.</p>
+<br />
+<p><strong>Actividades:</strong></p>
+<br/>
+Primero, nos aseguramos que la causa no ha sido creada:
+<pre><code>Select * from tbl_causa where ruc = '1234567890-9';
+</code></pre>
+<p>Segundo, nos aseguramos que exista al menos un registro en la tabla temporal de la causa:</p>
+<pre><code>Select * from tbl_tmp_causa where ruc = '1234567890-9'; 
+</code></pre>
+<p>Tercero, eliminamos todos los registros de esa causas en la tabla temporal:</p>
+<pre><code>BEGIN
+    delete tbl_tmp_causa where ruc = '1234567890-9';
+    COMMIT;
+END;
+</code></pre>
+<p>Casos de Ejemplos:<br/>
+<a href="https://redmine.dpp.cl/issues/11045">Ticket 1</a> <br/>
+<a href="https://redmine.dpp.cl/issues/11019">Ticket 2</a> <br/></p>
+<br/>
+<h3 id="cambiar-procedimiento-a-una-causa"><strong>Cambiar Procedimiento a una Causa</strong></h3>
+<br />
+<p>Existen ocasiones en que el estado de una causa queda mal establecido y el usuario recurre a soporte para que se modifique el estado. Para ello recurrimos al procedimiento <code>SGDP_USER.PKG_SOPORTE_DPP.upd_ProcedEstado</code>. Sólo debemos proveerlelos parámetros adecuados.</p>
+<br/>
+<p><strong>Actividad:</strong></p>
+<p>Identifique el ID de la Causa y el ID del CausaImputado (<code>CAUSAID</code> y <code>CAUSAIMPUTADOID</code>). Luego establezca los valores de <code>PROCEDIMIENTOID</code> y <code>ESTADOPROCESOID</code> en el cual quedarán.
+Utilice la siguiente Query para obtener el binomio <code>PROCEDIMIENTOID</code>, <code>ESTADOPROCESOID</code></p>
+<pre><code>select EP.ESTPROCESOID
+      ,EP.GLOSA_ESTADOPROC
+      ,EP.PROCEDIMIENTOID
+      ,PR.PROCEDIMIENTO 
+from tbl_estadoproceso ep 
+join tbl_procedimiento pr on PR.PROCEDIMIENTOID = EP.PROCEDIMIENTOID
+where EP.ESTPROCESOID != 99
+order by EP.PROCEDIMIENTOID , EP.ESTPROCESOID;
+</code></pre>
+<p>Luego establezca los parámetros en este procedimiento anónimo y ejecútelo.</p>
+<pre><code>DECLARE 
+  IN_CAUSAIMPUTADOID NUMBER;
+  IN_CAUSAID NUMBER;
+  IN_PROCEDIMIENTOID NUMBER;
+  IN_ESTADOPROCESOID NUMBER;
+  OUT_REALIZADO NUMBER;
+
+BEGIN 
+  IN_CAUSAIMPUTADOID := NULL;
+  IN_CAUSAID := NULL;
+  IN_PROCEDIMIENTOID := NULL;
+  IN_ESTADOPROCESOID := NULL;
+  OUT_REALIZADO := NULL;
+
+  SGDP_USER.PKG_SOPORTE_DPP.UPD_PROCEDESTADO ( IN_CAUSAIMPUTADOID, IN_CAUSAID, IN_PROCEDIMIENTOID, IN_ESTADOPROCESOID, OUT_REALIZADO );
+  COMMIT; 
+END; 
+</code></pre>
+<p>Caso de Ejemplo:<br/>
+<a href="https://redmine.dpp.cl/issues/11129">Ticket 1</a><br/></p>
+<br/>
+<h2 id="eliminar-atención-yo-gestión"><strong>Eliminar Atención y/o Gestión</strong></h2>
+<br/>
+<p><strong>Eliminar Atención</strong>: SIGDP no tiene implementada la funcionalidad de eliminación de Atenciones. Para eliminar una atención, utilícese el procedimiento siguiente: <code>SGDP_USER.PKG_SOPORTE_DPP.del_Atencion</code>. Debe proporcionar el ID de la atención (<code>IN_ATENCIONID</code>)</p>
+<p><strong>Actividad</strong>:
+Obtenga el ID de la Atención y luego incorpórelo al siguiente procedimiento anónimo.</p>
+<pre><code>DECLARE 
+  IN_ATENCIONID NUMBER;
+
+BEGIN 
+  IN_ATENCIONID := NULL;
+
+  SGDP_USER.PKG_SOPORTE_DPP.DEL_ATENCION ( IN_ATENCIONID );
+  COMMIT; 
+END; 
+</code></pre>
+<p>Casos de Ejemplos:<br/>
+<a href="https://redmine.dpp.cl/issues/10897">Ticket 1</a><br/>
+<a href="https://redmine.dpp.cl/issues/10686">Ticket 2</a><br/>
+<a href="https://redmine.dpp.cl/issues/10431">Ticket 3</a><br/></p>
+<p><strong>Nota</strong>: Una variante a esta solicitud es MODIFICAR LA ATENCION dado que SIGDP no tiene implementada la funcionalidad de editar Atenciones. Para atender este tipo de pedidos estudie los registros sobre las tablas <code>tbl_fap_atencion</code> y <code>tbl_fap_detalleatencion</code>.</p>
+<br/>
+<h3 id="solicita-nuevo-rud-o-rud-repetidos"><strong>Solicita Nuevo RUD o RUD repetidos</strong></h3>
+<br />
+<p>De tanto en tanto, SIGDP genera duplicidad de RUD, los cuales son reportados por los usuarios dueños de causas que se ven afectados por esta situación. Lo que podemos ofrecer como solución es generar un nuevo RUD para esta causa. Para ello utilice el procedimiento <code>SGDP_USER.PKG_SOPORTE_DPP.fnt_crea_rud</code>, para crear el Nuevo RUD y luego actualice la causa con éste RUD.</p>
+<br/>
+<p><strong>Actividad</strong>:
+Obtenga el ID de la causa (<code>CAUSAID</code>). Luego obtenga el tribunal y el año de la Causa. Use el siguiente procedimiento anónimo para modificar el RUD de la Causa. Se obtiene en la siguiente tabla:</p>
+<pre><code>select * from tbl_causa where upper(ruc) =upper('numero ruc');
+</code></pre>
+<p>Luego ejecutar el siguiente bloque:</p>
+<pre><code>DECLARE 
+  RetVal varchar(32767);
+  TRIBUNALID_IN VARCHAR2(32767);
+  AGNO_IN VARCHAR2(32767);
+  V_CAUSAID NUMBER;
+
+BEGIN 
+  TRIBUNALID_IN := NULL;
+  AGNO_IN       := NULL;
+  V_CAUSAID     := NULL;
+
+  RetVal := SGDP_USER.PKG_SOPORTE_DPP.FNT_CREA_RUD ( TRIBUNALID_IN, AGNO_IN );
+  
+  UPDATE TBL_CAUSA
+     SET RUD = RetVal
+   WHERE CAUSAID = V_CAUSAID;
+   
+  COMMIT; 
+END;
+</code></pre>
+<p>Casos de Ejemplo:<br/>
+-Pendiente<br/></p>
+<br />
+<h3 id="tramitación-electrónica"><strong>Tramitación Electrónica</strong></h3>
+<p>Para este tipo de pedidos, sólo hay que insertar un registro en la tabla <code>SGDP_USER.TBL_CAUSAIMPUTADO_RIT_TOP_TMP</code>.
+Se recomienda utilizar el procedimiento <code>SGDP_USER.PKG_SOPORTE_DPP.SOP_INSRITTOP</code>.
+<br/>
+<strong>Actividad</strong>:
+<br/></p>
+<p>Obtenga los siguientes parámetros necesarios para la inserción: <code>RIT</code>, <code>Tribunal CAPJ</code> y <code>CausaImputadoID</code>.</p>
+<pre><code>Select CA.CAUSAID
+     , CI.CAUSAIMPUTADOID
+     , CA.TRIBUNALID
+     , TR.NOMTRIBUNAL
+     , CT.TRIBUNALID AS CAPJ_TRIBUNALID
+     , CT.TRIBUNAL   AS capj_tribunal
+     , CA.RIT
+     , CA.RUC
+     , CA.RUD
+     , CI.IMPUTADOID
+     , RT.CAUSAIMPUTADOID
+     , RT.RIT_TOP
+     , RT.TRIBUNAL_CAPJ_ID
+from TBL_CAUSA ca
+join tbl_causaimputado ci on CI.CAUSAID = CA.CAUSAID 
+left join TBL_CAUSAIMPUTADO_RIT_TOP_TMP rt on RT.CAUSAIMPUTADOID = CI.CAUSAIMPUTADOID  
+join TBL_TRIBUNAL TR ON TR.TRIBUNALID = CA.TRIBUNALID
+left join TBL_CAPJ_TRIBUNAL CT ON CT.DPP_TRIBUNALID = TR.TRIBUNALID AND CT.TRIBUNALID = RT.TRIBUNAL_CAPJ_ID
+where CA.RUD = 'OVA-00252-22' ;
+
+</code></pre>
+<p>Luego establezca los valores de los parámetros en el siguiente procedimiento anónimo y ejecútelo. Revise la tabla <code>SGDP_USER.TBL_CAUSAIMPUTADO_RIT_TOP_TMP</code> y asegúrese que el registro fue insertado.</p>
+<pre><code>DECLARE 
+  IN_RIT VARCHAR2(32767);
+  IN_CAUSAIMPUTADO VARCHAR2(32767);
+  IN_TRIBUNALCAPJ VARCHAR2(32767);
+  O_ERRORCODE NUMBER;
+  O_ERRORMSG VARCHAR2(32767);
+
+BEGIN 
+  IN_RIT := NULL;
+  IN_CAUSAIMPUTADO := NULL;
+  IN_TRIBUNALCAPJ := NULL;
+  O_ERRORCODE := NULL;
+  O_ERRORMSG := NULL;
+
+  SGDP_USER.PKG_SOPORTE_DPP.SOP_INSRITTOP ( IN_RIT, IN_CAUSAIMPUTADO, IN_TRIBUNALCAPJ, O_ERRORCODE, O_ERRORMSG );
+  COMMIT; 
+END;
+</code></pre>
+<p>Casos de Ejemplo:<br/>
+<a href="https://redmine.dpp.cl/issues/11113">Ticket 1</a></p>
+<br />
+<h2 id="pagos"><strong>PAGOS</strong></h2>
+<br />
+<p>La siguiente Query resume el modelo de datos PAGOS.</p>
+<pre><code>select * 
+from tbl_contrato_new cn
+join tbl_defensoria df on DF.DEFENSORIAID = CN.DEFENSORIAID
+join tbl_informe_pago_enc ip on IP.DEFENSORIAID = DF.DEFENSORIAID
+join tbl_pago pg on PG.PAGOID = IP.PAGOID
+join tbl_dctotributario dt on DT.DCTOTRIBUTARIOID = PG.DCTOTRIBUTARIOID
+join tbl_antecedcontab ac on AC.ANTECEDCONTABID = PG.ANTECEDCONTABID
+join seg_fac.facturas fac on FAC.PAGOID = PG.PAGOID 
+left join TBL_HISTORIAL_PAGO hp on HP.PAGOID = PG.PAGOID and HP.ESTADOPAGONUEVO = 104
+Where CN.CONTRATOID = 7900;
+</code></pre>
+<p>Porcentaje Fondo Reserva</p>
+<pre><code>select CN.FECHAHASTAVIGENCIA, df.* 
+from tbl_informe_pago_enc ip
+join tbl_defensoria df on DF.DEFENSORIAID = IP.DEFENSORIAID
+join tbl_contrato_new cn on CN.DEFENSORIAID = DF.DEFENSORIAID
+where upper(ip.XML_CONTRATO) like '%&lt;PORCENTAJEFDORESERVA&gt;5&lt;/PORCENTAJEFDORESERVA&gt;%'
+  and CN.PORCENTAJEFDORESERVA = 5
+  and DF.ESTADO = 'V' 
+order by CN.FECHAHASTAVIGENCIA desc;
+</code></pre>
+<h2 id="-informe-reporte-cierre-"><ins> Informe reporte cierre </ins></h2>
+<p>Obtener la información mediante la siguiente Query, buscando por causa:</p>
+<pre><code>SELECT DISTINCT
+        CI.CAUSAIMPUTADOID,
+        CASE
+            WHEN (CI.CAUSAIMPUTADOID = CD.CAUSAIMPUTADOID AND CD.FECHA_FIN IS NULL) THEN 'Sí'
+        ELSE 'No' END CARPETA_DIGITAL,
+        CA.RUD,
+        CI.ESTADO,
+        TO_CHAR(CA.FECHAINGRESO,'DD-MM-RRRR') FECHA_INGRESO,
+        TO_CHAR(CA.FECHAINGRESO,'MM-RRRR') MES_INGRESO,
+        TO_CHAR(CI.FECHATERMINO,'DD-MM-RRRR') FECHA_TERMINO,
+        TO_CHAR(CI.FECHATERMINO,'MM-RRRR') MES_TERMINO,
+        CI.USUPRODEFID USUPRODEFID_CAUSA,
+        INITCAP(USU.NOMBRES || ' ' || USU.APPATERNO || ' ' || USU.APMATERNO) DEFENSOR_CAUSA,
+        DEF.DEFENSORIAID DEFENSORIAID_CAUSA,
+        DEF.NOMDEFENSORIA DEFENSORIA_CAUSA,
+        CC.CARPETA_ID,
+        CC.ESTADO_CARPETA_ID,
+        CEC.NOMBRE_ESTADO ESTADO_CARPETA,
+        CC.USUPRODEFID USUPRODEFID_CARPETA,
+        INITCAP(USUC.NOMBRES || ' ' || USUC.APPATERNO || ' ' || USUC.APMATERNO) RESPONSABLE_CARPETA,
+        DEFC.DEFENSORIAID DEFENSORIAID_CARPETA,
+        DEFC.NOMDEFENSORIA DEFENSORIA_CARPETA
+   FROM SGDP_USER.TBL_CAUSAIMPUTADO                 CI
+        JOIN SGDP_USER.TBL_CAUSA                    CA   ON CA.CAUSAID              = CI.CAUSAID
+        JOIN SGDP_USER.TBL_USUPRODEF                PRO  ON PRO.USUPRODEFID         = CI.USUPRODEFID
+        JOIN SGDP_USER.TBL_USUARIO                  USU  ON USU.USUARIOID           = PRO.USUARIOID
+        JOIN SGDP_USER.TBL_DEFENSORIA               DEF  on def.defensoriaid       = pro.defensoriaid                                     
+        LEFT JOIN CARPETA.TBL_CARP_CARPETA          CC   ON CC.CARPETA_ID           = CI.CAUSAIMPUTADOID
+        LEFT JOIN CARPETA.TBL_CARP_ESTADO_CARPETA   CEC  ON CEC.ESTADO_CARPETA_ID   = CC.ESTADO_CARPETA_ID
+        LEFT JOIN SGDP_USER.TBL_USUPRODEF           PROC ON PROC.USUPRODEFID        = CC.USUPRODEFID
+        LEFT JOIN SGDP_USER.TBL_USUARIO             USUC ON USUC.USUARIOID          = PROC.USUARIOID
+        LEFT JOIN SGDP_USER.TBL_DEFENSORIA          DEFC ON DEFC.DEFENSORIAID       = PROC.DEFENSORIAID
+        LEFT JOIN SGDP_USER.TBL_CAUSAIMPUTADO_CD    CD   ON CD.CAUSAIMPUTADOID      = CI.CAUSAIMPUTADOID AND CD.FECHA_FIN IS NULL
+where def.defensoriaid in (11747)
+ORDER BY DEF.DEFENSORIAID;
+
+---------------------
+select * from tbl_defensoria where NOMDEFENSORIA like '%JLVD SERVICIOS%';
+-- JLVD SERVICIOS, ASESORIAS Y CONSULTORIAS SPA Z6 CD 705 22 A = 11746
+-- JLVD SERVICIOS, ASESORIAS Y CONSULTORIAS SPA Z6 CD 706 22 B = 11747
+</code></pre>
+<p>Guardar como un Excel separando por causa.</p>
+<br />
+<h2 id="ingreso-erróneo-del-ruc"><strong>Ingreso erróneo del RUC</strong></h2>
+<br />
+<p>Si el usuario ingresa erróneamente el RUC, es decir intercambiaron el RUC de una causa por otra por lo que al momento de crearla el usuario no puede realizarlo ya que ese RUC está vinculado a una causa, pero el <code>IMPUTADOID</code> queda nulo. Para solucionar el problema:</p>
+<br />
+<p>Se debe recabar información, por lo que se tiene la siguiente query:</p>
+<pre><code>select * from TBL_TMP_CAUSA where ruc = '2201295108-K';
+select * from TBL_TMP_CAUSA where ruc = '2310000057-1';
+select * from TBL_TMP_CREACION_IMPUTADO where rutimputado = '18519839';
+select * from TBL_IMPUTADO where rutimputado = '18519839';
+select * from TBL_TMP_CREACION_IMPUTADO where id_cd = 824458;
+select * from TBL_TMP_CREACION_IMPUTADO where id_cd = 825687;
+</code></pre>
+<p>1.- Primero se debe realizar el reemplazo del RUC en el registro de la tabla temporal:</p>
+<pre><code>UPDATE TBL_TMP_CAUSA SET ruc='2310000057-1' WHERE RUC = '2300000063-9';
+</code></pre>
+<p><strong>Nota</strong>: Como recomendación se debe utilizar como filtro el ID de la causa:</p>
+<pre><code>UPDATE TBL_CAUSA SET ruc='2310000057-1' WHERE CAUSAID = 4958811;
+</code></pre>
+<p>2.- Posteriormente se debe asociar el <code>IMPUTADOID</code> correspondiente para que la causa contenga el ID y no aparezca el campo de Imputado descartado en el model de búsqueda por causa de SIGDP</p>
+<pre><code>update TBL_TMP_CREACION_IMPUTADO set imputadoid = 622286 where id_crea_imp = 2059124;
+</code></pre>
+<p>Finalmente, el registro queda asociado a un <code>IMPUTADOID</code> y a la causa correspondiente.</p>
+<p>Ejemplo de Caso:<br/>
+<a href="https://redmine.dpp.cl/issues/11418">Ticket 1</a></p>
+<br />
+<h2 id="editar-sistema-penitenciario"><strong>Editar Sistema Penitenciario</strong></h2>
+<br />
+<p>Para realizar cambios en Sistema penitenciario primero se debe verificar que la informaciónm suministrada es correcta, es decir que <code>PETICIONID</code> corresponda, debido a que en algunas ocasiones hay usuarios que envían <code>PETICIONREQUERIMIENTOID</code> en lugar de <code>PETICIONID</code>.</p>
+<p>Para esto primero verificamos con las siguientes consultas con el mismo dato suminstrado por el usuario:</p>
+<pre><code>SELECT * FROM PENITENCIARIO.TBL_PETICION WHERE PETICIONID ='201572753';
+SELECT * FROM PENITENCIARIO.TBL_PETICIONREQUERIMIENTO WHERE PETICIONREQUERIMIENTOID ='201572753';
+</code></pre>
+<p>Si en ambas consultas contienen información se debe validar con el usuario que el <code>PETICIONID</code> sea el correcto y no corresponda al <code>IDREQUERIMIENTO</code>. Una vez el usuario confirma la información se debe ingresar a SIGDP para obtener el ID del Requerimiento (<code>PETICIONREQUERIMIENTOID</code>).</p>
+<p>Acceder a la siguiente opciones para obtener el ID REQUERIMIENTO:</p>
+<pre><code>-- PENITENCIARIO -&gt; CONSULTAS -&gt; A1.CONSULTA SOLICITUD ATENCIÓN 
+</code></pre>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_1.png" alt="alt-text-1" title="title-1"> <img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_2.png" alt="alt-text-2" title="title-2"></p>
+<br/>
+<p>Para obtener  <code>IDPeticion</code>, ingresar en la opción de la Lupa en Requerimiento:</p>
+<br/>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_3.png" alt="alt-text-1" title="title-1"></p>
+<p>Luego de obtener el ID del Requerimiento, como recomendación se puede verificar que los datos correspondan mediante la siguiente consulta:</p>
+<pre><code>SELECT * FROM PENITENCIARIO.TBL_PETICIONREQUERIMIENTO WHERE PETICIONREQUERIMIENTOID ='201855545';
+</code></pre>
+<p>Posteriormente se debe realizar la actualización del estado a abierta y se elimina la fecha de término, mediante la utilidad de un PKG de SOPORTE creada con este objetivo (<code>PKG_SOPORTE_DPP -&gt; upd_ReversaFormaTerminoPet</code>).
+Finalmente, se debe ejecutar la siguiente consulta ingresando <code>PETICIONID</code> y <code>PETICIONREQUERIMIENTOID</code>:</p>
+<pre><code>DECLARE 
+  IN_PETICIONID NUMBER;
+  IN_PETICIONREQUERIMIENTOID NUMBER;
+  O_ERRORCODE NUMBER;
+  O_ERRORMSG VARCHAR2(32767);
+
+BEGIN 
+  IN_PETICIONID := '201572753';
+  IN_PETICIONREQUERIMIENTOID := '201855545';
+  O_ERRORCODE := NULL;
+  O_ERRORMSG := NULL;
+
+  SGDP_USER.PKG_SOPORTE_DPP.UPD_REVERSAFORMATERMINOPET ( IN_PETICIONID, IN_PETICIONREQUERIMIENTOID, O_ERRORCODE, O_ERRORMSG );
+  COMMIT; 
+END;
+</code></pre>
+<p>Validar que los cambios se efectuaron en Replica y posteriormente realizar los cambios en Producción.</p>
+<p>Caso de ejemplo: <br/>
+<a href="https://redmine.dpp.cl/issues/11292">Ticket 1</a></p>
+<br />
+<h2 id="crear-o-eliminar-un-nuevo-encargado-de-centro-de-proceso"><strong>Crear o eliminar un nuevo encargado de Centro de Proceso</strong></h2>
+<br/>
+<ol>
+<li>Habiendo ingresado a Portal Único, ir al módulo Gestor Documental (Proceso de Soporte)</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_4.png" alt="alt-text-1" title="title-1"></p>
+<ol start="2">
+<li>Clic en menú Mantenedor de usuario</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_5.png" alt="alt-text-1" title="title-1"></p>
+<ol start="3">
+<li>Ingresar el Rut del usuario y presionar el botón de buscar para obtener la información de la persona</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_6.png" alt="alt-text-1" title="title-1"></p>
+<ol start="4">
+<li>En la siguiente pantalla se muestran las opciones para habilitar a un nuevo encargado de centro o dar de baja también.</li>
+</ol>
+<center>
+![alt-text-1](img_7.jpg "title-1")
+</center>
+Caso de ejemplo: <br/>
+[Ticket 1](https://redmine.dpp.cl/issues/11416) 
+<br />
+<h2 id="habilitar-módulos-a-usuarios"><strong>Habilitar Módulos a usuarios</strong></h2>
+<br/>
+<ol>
+<li>Habilitar módulos para un usuario específico con Administrador de usuario -&gt; Carga de funcionalidades ingresando el rut del usuario:</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_8.jpg" alt="alt-text-1" title="title-1"></p>
+<ol start="2">
+<li>Elegir mediante los checkbox la opción requerida a agregar y posteriormente guardar con el botón en la parte inferior.</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_9.jpg" alt="alt-text-1" title="title-1"></p>
+<ol start="3">
+<li>Habilitar estado de permisos de usuario en algún módulo, mediante Mantenedor de usuario:</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_10.jpg" alt="alt-text-1" title="title-1"></p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_11.jpg" alt="alt-text-1" title="title-1"></p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_12.jpg" alt="alt-text-1" title="title-1"></p>
+<br/>
+<h2 id="modificación-de-cuentas-de-sustitución-creadas-erróneamente"><strong>Modificación de cuentas de sustitución creadas erróneamente</strong></h2>
+<br/>
+<p><strong>Contexto del caso:</strong></p>
+<p>La nómina en los nuevos contratos creados para el año en curso debería, quedar de la siguiente manera:</p>
+<br/>
+Zona 6 Talagante
+PRESTADOR CONTRATO I (1 JORNADA) JLVD SERVICIOS ASESORIAS Y CONSULTORIAS SPA <br/>
+DEFENSOR 1 ORIGINAL: ESAU JOCSAN SERRANO VIDAL <br/>
+DEFENSOR SUSTITUTO: FELIPE SILVA PEREZ <br/>
+<p><a href="https://redmine.dpp.cl/issues/11509">Ticket</a></p>
+<br/>
+Primero se debe verificar la información entregada por el usuario, para ello se debe ingresar en Licitación de Defensa-> Crear/Editar Contrato y seleccionar la región que corresponde en este caso Región Metropolitana Sur y el año de licitación en este caso 2022:
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_13.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Ingresamos en el Listado de Oferentes desde el icono marcado:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_14.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Posteriormente se debe hacer clic en el botón de Gestionar nómina:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_15.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Una vez que se encuentre en la opción de Equipo de Defensa, se puede verificar la información de los usuarios y su estado:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_16.jpg" alt="alt-text-1" title="title-1"></p>
+<p>En esta pantalla se puede obtener el RUT de las cuentas a corregir, información de estado y Cargo. <br/>
+Como podemos verificar hay varios errores en este modal, por ejemplo, la cantidad de abogados titulares y asistentes no corresponde a lo que actualmente se muestra, además no muestra los usuarios sustitutos marcados en verde. <br/>
+Este es un ejemplo como se debiera ver:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_17.jpg" alt="alt-text-1" title="title-1"></p>
+<br/>
+<p><strong>Solución del problema:</strong></p>
+<br/>
+<ol>
+<li>Obtener información del usuario original y el usuario a sustituir, además del contrato y defensoría asociados.</li>
+</ol>
+<p>Verificar que el usuario existe y obtener su <code>USUPRODEFID</code>, a partir de la siguiente query:</p>
+<pre><code>SELECT USU.NOMBRES||' '||USU.APPATERNO as nombre, USU.USUARIOID, DEF.USUPRODEFID, DEF.FECHAINICIO, DEF.FECHATERMINO , DEF.TIPOUSUARIOID
+  FROM tbl_usuario usu, tbl_usuprodef def 
+ WHERE usu.rutusuario = 13919730
+   AND USU.USUARIOID = DEF.USUARIOID
+   AND DEF.ESTADO = 'V';
+</code></pre>
+<p>El resultado es algo como esto, si se obtiene más de una cuenta se debe verificar cual es la cuenta que se encuentra activa y discriminamos según su vigencia:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_18.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Para identificar el <code>USUARIOID</code> activo se puede utilizar la siguiente query:</p>
+<pre><code>SELECT USU.NOMBRES||' '||USU.APPATERNO as nombre, USU.USUARIOID, DEF.USUPRODEFID, DEF.FECHAINICIO, DEF.FECHATERMINO  
+  FROM tbl_usuario usu, tbl_usuprodef def 
+ WHERE USU.USUARIOID = DEF.USUARIOID
+   AND DEF.ESTADO = 'V'
+   AND DEF.USUPRODEFID = 33639;
+</code></pre>
+<p>El <code>CONTRATOID</code> y <code>DEFENSORIAID</code> se obtiene desde Portal único.</p>
+<br/>
+<p>La otra información se obtiene en el explorador al presionar F12, posteriormente hacer clic en ícono de selector por clic y hacer clic en el nombre de la defensoría, luego identificar el número de contrato marcado en el punto 2:
+En el ejemplo el primer número corresponde a <code>CONTRATOID</code> y el tercero corresponde a <code>DEFENSORIAID</code>.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_19.jpg" alt="alt-text-1" title="title-1"></p>
+<ol start="2">
+<li>Procedemos a crear la nueva cuenta para usuarios originales, para ello el primer paso es  dejar la cuenta actual inactiva utilizando su <code>USUPRODEFID</code>:</li>
+</ol>
+<pre><code>UPDATE tbl_usuprodef def SET DEF.ESTADO = 'F' WHERE DEF.USUPRODEFID =31279;
+</code></pre>
+<ol start="3">
+<li>Creamos la cuenta nueva abogado original. Se deben ingresar los siguientes datos:</li>
+</ol>
+<ul>
+<li><code>USUARIOID</code></li>
+<li><code>RUT</code></li>
+<li><code>Digito Verificador</code></li>
+<li><code>NOMBRES</code></li>
+<li><code>APPATERNO</code></li>
+<li><code>APMATERNO</code></li>
+<li><code>CARGO</code> (2 = Abogado licitado, 12 = Asistente, 33 = Abogado reemplazante)</li>
+<li><code>CONTRATO_ID</code></li>
+<li><code>FECHADESDE = '01-01-2023'</code></li>
+<li><code>FECHAHASTA = '31-12-2025'</code></li>
+</ul>
+<p>Ejecutamos la query:</p>
+<pre><code>DECLARE 
+      USUARIOID_IN NUMBER;
+      RUT_IN VARCHAR2(32767);
+      DIG_IN VARCHAR2(32767);
+      NOMBRE_IN VARCHAR2(32767);
+      APPATERNO_IN VARCHAR2(32767);
+      APMATERNO_IN VARCHAR2(32767);
+      MAIL_IN VARCHAR2(32767);
+      TELEFONO_IN VARCHAR2(32767);
+      CARGO_IN NUMBER;
+      CONTRATOID_IN NUMBER;
+      FECHADESDE_IN VARCHAR2(32767);
+      FECHAHASTA_IN VARCHAR2(32767);
+      USUPRODEFID_SUSTITUYE_IN NUMBER;
+      V_IDUSUARIO NUMBER;
+      V_IPUSUARIO VARCHAR2(32767);
+      IO_CURSOR SGDP_USER.PKG_LIC_INS_NOMINA.ccursor_resultado;
+
+    BEGIN 
+      USUARIOID_IN := 12206;
+      RUT_IN := 17046536;
+      DIG_IN := '9';
+      NOMBRE_IN := 'MATÍAS ANDRÉS';
+      APPATERNO_IN := 'CANALES';
+      APMATERNO_IN := 'PUENTE';
+      MAIL_IN := 'mail@mail.cl';
+      TELEFONO_IN := null;
+      CARGO_IN := 2;-- Abogado Licitado
+      CONTRATOID_IN := 9320;
+      FECHADESDE_IN := '01-01-2023';
+      FECHAHASTA_IN := '31-12-2025';
+      USUPRODEFID_SUSTITUYE_IN := NULL;
+      V_IDUSUARIO := NULL;
+      V_IPUSUARIO := NULL;
+      IO_CURSOR := NULL;
+
+      SGDP_USER.PKG_LIC_INS_NOMINA.SP_INS_NOMINA ( USUARIOID_IN, RUT_IN, DIG_IN, NOMBRE_IN, APPATERNO_IN, APMATERNO_IN, MAIL_IN, TELEFONO_IN, CARGO_IN, CONTRATOID_IN, FECHADESDE_IN, FECHAHASTA_IN, USUPRODEFID_SUSTITUYE_IN, V_IDUSUARIO, V_IPUSUARIO, IO_CURSOR );
+      COMMIT; 
+    END;
+</code></pre>
+<h3 id="para-abogados-licitados">Para Abogados Licitados:</h3>
+<pre><code>DECLARE 
+      USUARIOID_IN NUMBER;
+      RUT_IN VARCHAR2(32767);
+      DIG_IN VARCHAR2(32767);
+      NOMBRE_IN VARCHAR2(32767);
+      APPATERNO_IN VARCHAR2(32767);
+      APMATERNO_IN VARCHAR2(32767);
+      MAIL_IN VARCHAR2(32767);
+      TELEFONO_IN VARCHAR2(32767);
+      CARGO_IN NUMBER;
+      CONTRATOID_IN NUMBER;
+      FECHADESDE_IN VARCHAR2(32767);
+   FECHAHASTA_IN VARCHAR2(32767);
+      USUPRODEFID_SUSTITUYE_IN NUMBER;
+      V_IDUSUARIO NUMBER;
+      V_IPUSUARIO VARCHAR2(32767);
+      IO_CURSOR SGDP_USER.PKG_LIC_INS_NOMINA.ccursor_resultado;
+
+    BEGIN 
+      USUARIOID_IN := 10377;
+      RUT_IN := 17228391;
+      DIG_IN := '8';
+      NOMBRE_IN := 'ESAU JOCSAN';
+      APPATERNO_IN := 'SERRANO';
+      APMATERNO_IN := 'VIDAL';
+      MAIL_IN := 'mail@mail.cl';
+      TELEFONO_IN := null;
+      CARGO_IN := 2;-- Abogado Licitado
+      CONTRATOID_IN := 9329;
+      FECHADESDE_IN := '01-01-2023';
+      FECHAHASTA_IN := '31-12-2025';
+      USUPRODEFID_SUSTITUYE_IN := NULL;
+      V_IDUSUARIO := NULL;
+      V_IPUSUARIO := NULL;
+      IO_CURSOR := NULL;
+
+SGDP_USER.PKG_LIC_INS_NOMINA.SP_INS_NOMINA ( USUARIOID_IN, RUT_IN, DIG_IN, NOMBRE_IN, APPATERNO_IN, APMATERNO_IN, MAIL_IN, TELEFONO_IN, CARGO_IN, CONTRATOID_IN, FECHADESDE_IN, FECHAHASTA_IN, USUPRODEFID_SUSTITUYE_IN, V_IDUSUARIO, V_IPUSUARIO, IO_CURSOR );
+      COMMIT; 
+    END;
+</code></pre>
+<h3 id="para-asistente-abogado-licitado">Para Asistente Abogado Licitado:</h3>
+<ol start="4">
+<li>Se debe ejecutar la misma query pero modificando los datos correspondientes es decir los mismos de antes, pero en el cargo se debe cambiar por 12, que corresponde al Asistente de abogado licitado:</li>
+</ol>
+<pre><code>BEGIN 
+      USUARIOID_IN := 14267;
+      RUT_IN := 19409328;
+      DIG_IN := '4';
+      NOMBRE_IN := 'NICOLÁS ALEXANDER';
+      APPATERNO_IN := 'ACEVEDO';
+      APMATERNO_IN := 'ESPINOZA';
+      MAIL_IN := 'mail@mail.cl';
+      TELEFONO_IN := null;
+      CARGO_IN := 12;-- Asistente Abogado Licitado
+      CONTRATOID_IN := 9329;
+      FECHADESDE_IN := '01-01-2023';
+      FECHAHASTA_IN := '31-12-2025';
+      USUPRODEFID_SUSTITUYE_IN := NULL;
+      V_IDUSUARIO := NULL;
+      V_IPUSUARIO := NULL;
+      IO_CURSOR := NULL;
+
+      SGDP_USER.PKG_LIC_INS_NOMINA.SP_INS_NOMINA ( USUARIOID_IN, RUT_IN, DIG_IN, NOMBRE_IN, APPATERNO_IN, APMATERNO_IN, MAIL_IN, TELEFONO_IN, CARGO_IN, CONTRATOID_IN, FECHADESDE_IN, FECHAHASTA_IN, USUPRODEFID_SUSTITUYE_IN, V_IDUSUARIO, V_IPUSUARIO, IO_CURSOR );
+      COMMIT; 
+    END;
+</code></pre>
+<h3 id="actualizar-cuentas-del-sustituto">ACTUALIZAR CUENTAS DEL SUSTITUTO</h3>
+<p>Luego de crear la cuenta se debe volver a consultar el <code>USUPRODEFID</code> para realizar la sustitución, la lógica sería de la siguiente forma:</p>
+<br/>
+<p><code>Usuario nuevo sustituye al original</code> <code>(USUPRODEFID_SUSTITUYE)</code></p>
+<br/>
+<p>Esto se realiza mediante la siguiente query:</p>
+<pre><code>update tbl_usuprodef def 
+   set DEF.USUPRODEFID_SUSTITUYE = 33914
+ where DEF.USUPRODEFID = 33638;-- Usuario Nuevo
+</code></pre>
+<p>Dejar inactiva la cuenta del usuario reemplazado:</p>
+<pre><code>UPDATE tbl_usuprodef def SET DEF.ESTADO = 'F' WHERE DEF.USUPRODEFID =33914;
+</code></pre>
+<p>Insertar historial de sustitución de usuarios:</p>
+<p>Se debe recopilar información antes de realizar la query, para ello en Toad creamos un Shema Browser posteriormente accedemos en:
+<code>LICITACIONES</code>-&gt;<code>TBL_EVAL_EXP_CALIFICACION</code>-&gt; <code>pestaña Data</code>:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_20.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Filtramos por RUT y obtenemos las calificaciones del usuario:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_21.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Para abogados se debe ejecutar la siguiente query:</p>
+<pre><code>Insert into LICITACIONES.TBL_HIST_SUSTITUYENTE
+
+            (HISTSUSTID, 
+            DEFENSORIAID, 
+            CONTRATOID, 
+            USUPRODEFID_NEW, 
+            EXPERIENCIA_NEW,
+            PRUEBA_NEW,
+            DIPLOMADO_NEW,
+            MAGISTERDOCT_NEW,
+            USUPRODEFID_OLD, 
+            EXPERIENCIA_OLD,
+            PRUEBA_OLD,
+            DIPLOMADO_OLD, 
+            MAGISTERDOCT_OLD, 
+            OBSERVACION_CALIF,
+            RUTOFER_ORI, 
+            LIMITESUSTITUCIONES,
+            TIPOUSUARIOID, 
+            USUPRODEFID_MODIF, 
+            FECHA_COMPUTO)
+          
+     Values (  LICITACIONES.TBL_HIST_SUSTITUYENTE_SQ.NEXTVAL, 
+               11850, -- DEFENSORIAID
+               9320, -- CONTRATOID             
+               33357, -- USUPRODEFID_NEW             
+               '900',-- EXPERIENCIA_NEW
+               '82',-- PRUEBA_NEW
+               'N',-- DIPLOMADO_NEW
+               'N',-- MAGISTERDOCT_NEW             
+               33914, -- USUPRODEFID_OLD
+               null,-- EXPERIENCIA_OLD
+               null,-- PRUEBA_OLD
+               'N',-- DIPLOMADO_OLD
+               'N',-- MAGISTERDOCT_OLD  
+               '', -- OBSERVACION_CALIF
+               '17228391-8', -- Rut del integrante original de la evaluacion de oferta RUTOFER_ORI
+               'N',
+               2, -- TIPOUSUARIOID
+               0, -- Usuario que creó el registro USUPRODEFID_MODIF
+               TO_DATE('01/16/2023 00:00:00', 'MM/DD/YYYY HH24:MI:SS')--FECHA_COMPUTO
+               );
+</code></pre>
+<p>Para Asistentes, la diferencia radica el <code>TIPOUSUARIOID</code> y en la capacitación del usuario, es decir si tiene magister, doctorados y sus calificaciones las cuales están relacionadas al cargo, en este caso no es necesario llenar estos campos:</p>
+<pre><code>Insert into LICITACIONES.TBL_HIST_SUSTITUYENTE
+
+            (HISTSUSTID, 
+            DEFENSORIAID, 
+            CONTRATOID, 
+            USUPRODEFID_NEW, 
+            EXPERIENCIA_NEW,
+            PRUEBA_NEW,
+            DIPLOMADO_NEW,
+            MAGISTERDOCT_NEW,
+            USUPRODEFID_OLD, 
+            EXPERIENCIA_OLD,
+            PRUEBA_OLD,
+            DIPLOMADO_OLD, 
+            MAGISTERDOCT_OLD, 
+            OBSERVACION_CALIF,
+            RUTOFER_ORI, 
+            LIMITESUSTITUCIONES,
+            TIPOUSUARIOID, 
+            USUPRODEFID_MODIF, 
+            FECHA_COMPUTO)
+          
+     Values (  LICITACIONES.TBL_HIST_SUSTITUYENTE_SQ.NEXTVAL, 
+               11859, -- DEFENSORIAID
+               9329, -- CONTRATOID             
+               33638, -- USUPRODEFID_NEW             
+               null,-- EXPERIENCIA_NEW
+               null,-- PRUEBA_NEW
+               '-',-- DIPLOMADO_NEW
+               '-',-- MAGISTERDOCT_NEW             
+               33894, -- USUPRODEFID_OLD
+               null,-- EXPERIENCIA_OLD
+               null,-- PRUEBA_OLD
+               '-',-- DIPLOMADO_OLD
+               '-',-- MAGISTERDOCT_OLD  
+               '', -- OBSERVACION_CALIF
+               '19409328-4', -- Rut del integrante original de la evaluacion de oferta RUTOFER_ORI
+               'N',
+               12, -- TIPOUSUARIOID
+               0, -- Usuario que creó el registro USUPRODEFID_MODIF
+               TO_DATE('01/16/2023 00:00:00', 'MM/DD/YYYY HH24:MI:SS')--FECHA_COMPUTO
+               );
+</code></pre>
+<p>Finalmente se debe verificar mediante Portal Único si los cambios se hicieron de forma satisfactoria.</p>
+<h2 id="actualizar-información-del-historial">Actualizar Información Del Historial</h2>
+<p>Para actualizar la información del historial se debe ingresar la información necesaria y la fecha actual para la creación del registro. También se debe recopilar los datos relacionados con las credenciales del usuario.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_22.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Para actualizar el historial del abogado licitado sustituyente se debe ejecutar el siguiente código:</p>
+<pre><code>Insert into LICITACIONES.TBL_HIST_SUSTITUYENTE
+
+            (HISTSUSTID, 
+            DEFENSORIAID, 
+            CONTRATOID, 
+            USUPRODEFID_NEW, 
+            EXPERIENCIA_NEW,
+            PRUEBA_NEW,
+            DIPLOMADO_NEW,
+            MAGISTERDOCT_NEW,
+            USUPRODEFID_OLD, 
+            EXPERIENCIA_OLD,
+            PRUEBA_OLD,
+            DIPLOMADO_OLD, 
+            MAGISTERDOCT_OLD, 
+            OBSERVACION_CALIF,
+            RUTOFER_ORI, 
+            LIMITESUSTITUCIONES,
+            TIPOUSUARIOID, 
+            USUPRODEFID_MODIF,
+            FECHA_COMPUTO)
+          
+     Values (LICITACIONES.TBL_HIST_SUSTITUYENTE_SQ.NEXTVAL, 
+               11859, -- DEFENSORIAID
+               9329, -- CONTRATOID             
+               33639, -- USUPRODEFID_NEW             
+               '900',-- EXPERIENCIA_NEW
+               '82',-- PRUEBA_NEW
+               'N',-- DIPLOMADO_NEW
+               'N',-- MAGISTERDOCT_NEW             
+               33913, -- USUPRODEFID_OLD
+               3373,-- EXPERIENCIA_OLD
+               100,-- PRUEBA_OLD
+               'S',-- DIPLOMADO_OLD
+               'S',-- MAGISTERDOCT_OLD  
+               '', -- OBSERVACION_CALIF
+               '17228391-8', -- Rut del integrante original de la evaluacion de oferta RUTOFER_ORI
+               'N',
+               2, -- TIPOUSUARIOID
+               0, -- Usuario que creó el registro USUPRODEFID_MODIF
+               TO_DATE('01/17/2023 00:00:00', 'MM/DD/YYYY HH24:MI:SS')--FECHA_COMPUTO
+               );
+</code></pre>
+<p>Para actualizar el historial del abogado asistente se debe ejecutar el siguiente código:</p>
+<pre><code>Insert into LICITACIONES.TBL_HIST_SUSTITUYENTE
+
+            (HISTSUSTID, 
+            DEFENSORIAID, 
+            CONTRATOID, 
+            USUPRODEFID_NEW, 
+            EXPERIENCIA_NEW,
+            PRUEBA_NEW,
+            DIPLOMADO_NEW,
+            MAGISTERDOCT_NEW,
+            USUPRODEFID_OLD, 
+            EXPERIENCIA_OLD,
+            PRUEBA_OLD,
+            DIPLOMADO_OLD, 
+            MAGISTERDOCT_OLD, 
+            OBSERVACION_CALIF,
+            RUTOFER_ORI, 
+            LIMITESUSTITUCIONES,
+            TIPOUSUARIOID, 
+            USUPRODEFID_MODIF, 
+            FECHA_COMPUTO)
+          
+     Values (  LICITACIONES.TBL_HIST_SUSTITUYENTE_SQ.NEXTVAL, 
+               11859, -- DEFENSORIAID
+               9329, -- CONTRATOID             
+               33638, -- USUPRODEFID_NEW             
+               null,-- EXPERIENCIA_NEW
+               null,-- PRUEBA_NEW
+               '-',-- DIPLOMADO_NEW
+               '-',-- MAGISTERDOCT_NEW             
+               33914, -- USUPRODEFID_OLD
+               null,-- EXPERIENCIA_OLD
+               null,-- PRUEBA_OLD
+               '-',-- DIPLOMADO_OLD
+               '-',-- MAGISTERDOCT_OLD  
+               '', -- OBSERVACION_CALIF
+               '19409328-4', -- Rut del integrante original de la evaluacion de oferta RUTOFER_ORI
+               'N',
+               12, -- TIPOUSUARIOID
+               0, -- Usuario que creó el registro USUPRODEFID_MODIF
+               TO_DATE('01/17/2023 00:00:00', 'MM/DD/YYYY HH24:MI:SS')--FECHA_COMPUTO
+               );
+</code></pre>
+<br />
+<h2 id="eliminar-registros"><strong>Eliminar registros</strong></h2>
+<br />
+<p>En caso de crear más de una sustitución se debe ingresar en <code>Shema Browser</code> -&gt; <code>LICITACIONES</code> -&gt; <code>TBL_HIST_SUSTITUYENTE</code> luego ir a la pestaña <code>Data</code>:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_23.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Hacer clic en la primera columna para cambiar el orden de la columna y seleccionar orden descendente:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_24.png.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Luego, seleccionar el registro a eliminar y presionar – para eliminarlo y finalmente hacer <code>COMMIT</code>.</p>
+<br />
+<h2 id="error-al-ingresar-notificación"><strong>Error al ingresar notificación</strong></h2>
+<br />
+<p>Al ingresar una notificación al imputado el sistema arroja un error en Registro de gestiones para una causa específica.
+El problema se debe a <code>REGISTROID</code> duplicados en la tabla <code>tbl_agendadetallepp</code>.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_25.jpg" alt="alt-text-1" title="title-1"></p>
+<ol>
+<li>Verificar que en MsObtenerGestionesCausa arroja el mismo error (5XX).</li>
+<li>Buscar RUT del usuario que presenta el problema para ingresar en SIGDP y reproducir el error, buscamos el RUT mediante la siguiente query:</li>
+</ol>
+<pre><code>select * from tbl_usuprodef where usuprodefid=32258;
+</code></pre>
+<ol start="3">
+<li>Verificamos cuales registros se encuentran duplicados con:</li>
+</ol>
+<pre><code>select * from tbl_agendadetallepp WHERE CAUSAIMPUTADOID = 5687173;
+</code></pre>
+<ol start="4">
+<li>Obtenemos el siguiente resultado:</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_26.jpg" alt="alt-text-1" title="title-1"></p>
+<ol start="5">
+<li>Identificamos los registros con <code>REGISTROGESTIONID</code> duplicados y procedemos a eliminarlos mediante la siguiente query:</li>
+</ol>
+<pre><code>delete from tbl_agendadetallepp WHERE AGENDADETALLEID IN(2353240,2338226);
+</code></pre>
+<ol start="6">
+<li>Verificar si dejando vacío el campo de uno sigue funcionando correctamente y posteriormente verificar que se resolvió el problema en SIGDP.</li>
+</ol>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_27.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Ejemplo de Caso:</p>
+<p><a href="https://redmine.dpp.cl/issues/11414">Ticket</a></p>
+<br />
+<h2 id="volver-a-un-timestamp-anterior-en-la-base-de-datos"><strong>Volver a un Timestamp anterior en la base de datos</strong></h2>
+<br />
+<p>Para volver a un Timestamp anterior en la base de datos se debe ejecutar la siguiente query:</p>
+<pre><code>INSERT INTO TBL_AGENDADETALLEPP
+SELECT * FROM TBL_AGENDADETALLEPP AS OF TIMESTAMP
+    to_timestamp('23-01-2023 09:35:00', 'dd-mm-yyyy HH:MI:SS') WHERE CAUSAIMPUTADOID = '5687173';
+</code></pre>
+<br />
+<h2 id="problemas-con-documentos-en-gestor-documental"><strong>Problemas con documentos en Gestor Documental</strong></h2>
+<br />
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_28.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Cuando hay problemas de Archivos no encontrados o errores relacionados con archivos puede ingresar en <code>Potal Único -&gt; Gestor Documental -&gt; Corrector docs</code>, cabe señalar que las correcciones se deben realizar en producción y se debe actualizar cada archive para corregir el problema.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_29.jpg" alt="alt-text-1" title="title-1"></p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_30.jpg" alt="alt-text-1" title="title-1"></p>
+<br />
+<h2 id="error-creación-causas-automáticas-se-asigna-a-un-dlj-no-vigente"><strong>Error creación causas automáticas (Se asigna a un DLJ no vigente)</strong></h2>
+<br />
+<p>Al crear causas automáticamente estas se asignan a un DLJ no vigente, para resolver el problema debemos ejecutar PKG que se encuentra en la siguiente ruta:</p>
+<p><code>SGDP_USER -&gt;PKG_SOPORTE_DPP -&gt; upd_DLJ_causautomatica </code></p>
+<p>Antes de ejecutar el PKG debemos obtener el TRIBUNALID y el USUPRODEFID al que deseamos asociar ese tribunal. Esto se obtiene mediante las siguientes query:</p>
+<p>Obtenemos el TRIBUNALID con:</p>
+<pre><code>select * from tbl_tribunal where upper(nomtribunal) like upper('%osorno%');
+Verificamos las cuentas vigentes para el tribunal:
+select * from TBL_TRIBUNALES_DLJ_CREA_CAUSA where tribunalid =109;
+
+</code></pre>
+<p>Además se debe tener en consideración si el usuario tiene más de una cuenta activa e identificar cual es la cuenta que tiene causas asociadas, para ello podemos ejecutar las siguientes querys:</p>
+<pre><code>
+select * from tbl_causaimputado where usuprodefid = 32501 and estado ='A';
+Si no encuentra causas con ESTADO ‘A’, utilizar esta query:
+select * from tbl_causaimputado where usuprodefid = 32510;
+
+</code></pre>
+<p>Una vez tenemos el <code>TRIBUNALID</code> y el <code>USUPRODEFID</code> ejecutamos la siguiente query, ingresando las variables correspondientes:</p>
+<pre><code>DECLARE 
+  TRIBUNALID_IN NUMBER;
+  USUPRODEFID_IN NUMBER;
+  O_ERRORCODE NUMBER;
+  O_ERRORMSG VARCHAR2(32767);
+
+BEGIN 
+  TRIBUNALID_IN := 109;
+  USUPRODEFID_IN := 33501;
+  O_ERRORCODE := NULL;
+  O_ERRORMSG := NULL;
+
+  SGDP_USER.PKG_SOPORTE_DPP.UPD_DLJ_CAUSAUTOMATICA ( TRIBUNALID_IN, USUPRODEFID_IN, O_ERRORCODE, O_ERRORMSG );
+END;
+</code></pre>
+<p>Finalmente verificamos que la información sea correcta mediante:</p>
+<pre><code>select * from TBL_TRIBUNALES_DLJ_CREA_CAUSA where tribunalid =109;
+</code></pre>
+<p>Generalmente mostrará la cuenta active y las cuentas inactivas.</p>
+<p>Caso de Ejemplo:</p>
+<p><a href="https://redmine.dpp.cl/issues/11515">Ticket</a></p>
+<br />
+<h2 id="el-rut-seleccionado-se-encuentra-en-el-listado-de-equipo-de-defensa"><strong>El RUT seleccionado se encuentra en el listado de equipo de defensa</strong></h2>
+<br />
+<p>Este problema ocurre cuando el usuario existe en la nómina antes de realizar la sustitución, debido a que se crea el perfil nuevo mediante el botón agregar integrante.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_31.jpg" alt="alt-text-1" title="title-1"></p>
+<p>La forma correcta de sustituir sería utilizar el botón de sustitución el cual crea la cuenta y al mismo tiempo sustituye.</p>
+<p>Una solución que se puede implementar fácilmente es eliminar el registro mediante el <code>USUPRODEFID</code> y luego hacer la sustitución como corresponde. Se debe tener precaución antes de eliminar al usuario verificando que no existan registros asociados a esa cuenta, es decir que no haya realizado ninguna acción en el sistema con esa cuenta.</p>
+<p>Una vez verificado se puede realizar el cambio utilizando la siguiente query y luego presionar el botón de sustitución que crea una nueva cuenta para el usuario sustituto y lo deja activo:</p>
+<pre><code>delete tbl_usuprodef where usuprodefid = '33024';
+</code></pre>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_32.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Si el cambio se realiza correctamente el usuario anterior no debiera aparecer en la lista, además debe marcar al usuario sustituto de color verde, por último, se debe llenar la información del historial de sustitución.</p>
+<p>Si al momento de ejecutar la eliminación de la cuenta nos arroja un error, puede indicar que esta cuenta tiene asociada varios registros en otras tablas, en ese caso se solucionaría de la siguiente manera:
+Sustitución de cuenta original(<code>USUPRODEFID_SUSTITUYE</code>) por la nueva cuenta:</p>
+<pre><code>UPDATE TBL_USUPRODEF DEF 
+   SET DEF.USUPRODEFID_SUSTITUYE = 31720 
+   WHERE DEF.USUPRODEFID = 33024;--Nuevo USUPRODEFID
+</code></pre>
+<p>Dejamos inactiva la cuenta del usuario sustituido y ponemos como fecha de término una fecha anterior a la actual, esto para que no se muestre en la lista del contrato:</p>
+<pre><code>UPDATE TBL_USUPRODEF DEF SET DEF.ESTADO = 'F', FECHATERMINO='27-01-2023'    WHERE DEF.USUPRODEFID =33917;
+
+</code></pre>
+<p>Posteriormente modificamos el historial para que contenga la información del reemplazo, para obtener la información del usuario ingresamos en <code>LICITACIONES -&gt; TBL_EVAL_EXP_CAPACITACION</code> y filtramos por RUT sin DV:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_33.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Obtenemos los siguientes datos:</p>
+<ul>
+<li>EXPERIENCIA</li>
+<li>PUNTAJE_PBA</li>
+<li>DIPLOMADO</li>
+<li>MAGISTER</li>
+</ul>
+<p>Esta información se utilizará para llenar el historial de reemplazo.</p>
+<br />
+<h2 id="solicitud-de-incorporación-segunda-sub-rogante-regional-o-agregar-centro-a-usuario"><strong>Solicitud de incorporación segunda sub rogante regional o agregar centro a usuario</strong></h2>
+<br />
+<p>Primero, en el caso del sub rogante debe venir adjunto al ticket la resolución exenta indicando que el usuario está autorizado a realizar las labores del cargo, si este no viene se debe solicitar.
+Posteriormente se debe ingresar con una cuenta con privilegios de edición de gestor documental, luego se requiere asignar las facultades en Portal Único como sub rogante regional, para ello se debe ingresar en <code>Gestor Documental -&gt; Mantenedor de Usuarios</code>:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_34.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Luego se debe ingresar el Rut del usuario que quiere asignar la tarea o centro.</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_35.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Nos mostrará la siguiente ventana:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_36.jpg" alt="alt-text-1" title="title-1"></p>
+<p>En este caso el usuario tiene más de una cuenta, por lo que debemos comprobar cuál es la cuenta con la que necesitamos trabajar:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_37.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Posteriormente se debe seleccionar la opción de Mi Centro de Proceso:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_38.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Y se selecciona el centro al cual se requiere agregar:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_39.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Una vez que se selecciona el centro se debe activar cambiando el estado:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_40.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Si el perfil es de visador se activa la opción con el mismo nombre:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_41.jpg" alt="alt-text-1" title="title-1"></p>
+<p>También en la opción de Firmador se puede habilitar si puede hacerlo, cuando no se tiene información del cargo y unidad se debe ingresar: “No se tiene información”</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_42.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Para agregar al usuario como subrogante podemos hacer clic en el botón creado para esta acción:</p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_43.jpg" alt="alt-text-1" title="title-1"></p>
+<p><img src="file:///\\DN5-PRACDESA\Users2\practica.desarrollo\Desktop\soporte_SIGDP\img_44.jpg" alt="alt-text-1" title="title-1"></p>
+<p>Ejemplo de caso:</p>
+<p><a href="https://redmine.dpp.cl/issues/11578">Ticket</a></p>
+
+        
+        
+    </body>
+    </html>
